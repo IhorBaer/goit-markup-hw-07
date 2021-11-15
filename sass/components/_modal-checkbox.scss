@@ -1,0 +1,88 @@
+.check {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.71;
+	/* identical to box height, or 171% */
+	letter-spacing: 0.03em;
+	color: var(--primary-text-color);
+}
+
+.check-input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.check-box {
+	width: 16px;
+	height: 15px;
+	margin-right: 9px;
+	background-image: url(/images/rec1.svg);
+	transition-property: beckground-image;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check-input:checked + .check-box {
+	background-image: url(/images/iconcheck.svg);
+}
+
+.check-input:focus + .check-box {
+	background-image: url(/images/rec2.svg);
+}
+
+.check-input:checked:focus + .check-box {
+	background-image: url(/images/iconcheck2.svg);
+}
+
+.check-input:hover + .check-box {
+	background-image: url(/images/rec2.svg);
+}
+
+.check-input:checked:hover + .check-box {
+	background-image: url(/images/iconcheck2.svg);
+}
+
+.check-box-linc {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.71;
+	/* identical to box height, or 171% */
+	letter-spacing: 0.03em;
+	color: var(--accent);
+}
+
+.hiro-form-button {
+	margin: 0 auto;
+	display: block;
+	width: 200px;
+	min-height: 50px;
+	border: none;
+	background: #2196f3;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	cursor: pointer;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.86;
+	/* identical to box height, or 187% */
+	letter-spacing: 0.06em;
+	color: var(--second-color-heder-text-title-bc);
+	transition-property: background-color, box-shadow;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hiro-form-button:focus,
+.hiro-form-button:hover {
+	background: #188ce8;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+}
