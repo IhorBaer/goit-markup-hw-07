@@ -361,7 +361,7 @@ img {
   height: 15px;
   margin-right: 9px;
   background-image: url(/images/rec1.svg);
-  transition-property: beckground-image;
+  transition-property: background-image;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -551,7 +551,7 @@ img {
   padding-top: 200px;
   max-width: 1600px;
   margin: 80px auto;
-  background-image: linear-gradient(var(--nineteen-rgba), var(--nineteen-rgba)), url(../images/img.17.jpg);
+  background-image: linear-gradient(var(--nineteen-rgba), var(--nineteen-rgba)), url(../images/img17.jpg);
 }
 
 .main-title {
