@@ -360,30 +360,30 @@ img {
   width: 16px;
   height: 15px;
   margin-right: 9px;
-  background-image: url(/images/gray.svg);
+  background-image: url(../images/gray.svg);
   transition-property: background-image;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .check-input:checked + .check-box {
-  background-image: url(/images/check.svg);
+  background-image: url(../images/check.svg);
 }
 
 .check-input:focus + .check-box {
-  background-image: url(/images/dlue.svg);
+  background-image: url(../images/dlue.svg);
 }
 
 .check-input:checked:focus + .check-box {
-  background-image: url(/images/hover.svg);
+  background-image: url(../images/hover.svg);
 }
 
 .check-input:hover + .check-box {
-  background-image: url(/images/dlue.svg);
+  background-image: url(../images/dlue.svg);
 }
 
 .check-input:checked:hover + .check-box {
-  background-image: url(/images/hover.svg);
+  background-image: url(../images/hover.svg);
 }
 
 .check-box-linc {
