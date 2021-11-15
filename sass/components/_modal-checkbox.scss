@@ -16,6 +16,26 @@
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+
+	&:checked + .check-box {
+		background-image: url(../images/check.svg);
+	}
+
+	&:hover + .check-box {
+		background-image: url(../images/dlue.svg);
+	}
+
+	&:focus + .check-box {
+		background-image: url(../images/dlue.svg);
+	}
+
+	&:checked:focus + .check-box {
+		background-image: url(../images/hover.svg);
+	}
+
+	&:checked:hover + .check-box {
+		background-image: url(../images/hover.svg);
+	}
 }
 
 .check-box {
@@ -26,26 +46,6 @@
 	transition-property: background-image;
 	transition-duration: 10ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.check-input:checked + .check-box {
-	background-image: url(../images/check.svg);
-}
-
-.check-input:hover + .check-box {
-	background-image: url(../images/dlue.svg);
-}
-
-.check-input:focus + .check-box {
-	background-image: url(../images/dlue.svg);
-}
-
-.check-input:checked:focus + .check-box {
-	background-image: url(../images/hover.svg);
-}
-
-.check-input:checked:hover + .check-box {
-	background-image: url(../images/hover.svg);
 }
 
 .check-box-linc {
@@ -78,11 +78,11 @@
 	transition-property: background-color, box-shadow;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.hiro-form-button:focus,
-.hiro-form-button:hover {
-	background: #188ce8;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;
+	&:hover,
+	&:focus {
+		background: #188ce8;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+		border-radius: 4px;
+	}
 }

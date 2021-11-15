@@ -40,6 +40,16 @@
 	transition-property: border-color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		border-color: var(--hover-color);
+	}
+
+	&:hover + .modal-form-icon,
+	&:focus + .modal-form-icon {
+		fill: var(--hover-color);
+	}
 }
 
 .hiro-comment-text {
@@ -67,11 +77,11 @@
 	transition-property: border-color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.hiro-comment-input:focus,
-.hiro-comment-input:hover {
-	border-color: var(--hover-color);
+	&:focus,
+	&:hover {
+		border-color: var(--hover-color);
+	}
 }
 
 .modal-form-block {
@@ -88,24 +98,9 @@
 	transition-property: fill;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.hiro-form-input:hover,
-.hiro-form-input:focus {
-	border-color: var(--hover-color);
-}
-
-.modal-form-icon:hover,
-.modal-form-icon:focus {
-	fill: var(--hover-color);
-}
-
-.modal-form-icon:hover .hiro-form-input,
-.modal-form-icon:focus .hiro-form-input {
-	border-color: var(--hover-color);
-}
-
-.hiro-form-input:hover + .modal-form-icon,
-.hiro-form-input:focus + .modal-form-icon {
-	fill: var(--hover-color);
+	&:hover,
+	&:focus {
+		fill: var(--hover-color);
+	}
 }

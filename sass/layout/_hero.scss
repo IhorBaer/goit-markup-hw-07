@@ -42,12 +42,12 @@
 	transition-property: background-color, box-shadow;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.main-btn:hover,
-.main-btn:focus {
-	color: var(--second-color-heder-text-title-bc);
-	background-color: var(--hover-color);
-	box-shadow: 0px 4px 4px var(--two-rgba);
-	border-radius: 4px;
+	&:hover,
+	&:focus {
+		color: var(--second-color-heder-text-title-bc);
+		background-color: var(--hover-color);
+		box-shadow: 0px 4px 4px var(--two-rgba);
+		border-radius: 4px;
+	}
 }

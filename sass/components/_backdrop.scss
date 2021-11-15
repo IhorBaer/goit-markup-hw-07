@@ -2,6 +2,7 @@
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
+	right: 0;
 	left: 0;
 	top: 0;
 	background: var(--one-rgba);
@@ -16,7 +17,9 @@
 	pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
-	transform: translate(-50%, -50%) scale(0.3);
-	opacity: 0;
+.backdrop.is-hidden {
+	.modal {
+		transform: translate(-50%, -50%) scale(0.3);
+		opacity: 0;
+	}
 }

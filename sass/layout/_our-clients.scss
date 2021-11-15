@@ -5,10 +5,10 @@
 .customers-item {
 	display: flex;
 	margin-right: 30px;
-}
 
-.customers-item:last-child {
-	margin-right: 0;
+	&:last-child {
+		margin-right: 0;
+	}
 }
 
 .customers-interactive {
@@ -23,20 +23,20 @@
 	transition-property: border-color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		border-color: var(--accent);
+	}
+
+	&:hover .customers-icon,
+	&:focus .customers-icon {
+		fill: var(--accent);
+	}
 }
 .customers-icon {
 	fill: var(--fill-color);
 	transition-property: fill;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.customers-interactive:hover,
-.customers-interactive:focus {
-	border-color: var(--accent);
-}
-
-.customers-interactive:hover .customers-icon,
-.customers-interactive:focus .customers-icon {
-	fill: var(--accent);
 }

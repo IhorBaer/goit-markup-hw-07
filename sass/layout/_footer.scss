@@ -35,6 +35,10 @@
 	transition-property: color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover,
+	&:focus {
+		color: var(--accent);
+	}
 }
 
 .adress-mail,
@@ -43,15 +47,11 @@
 	transition-property: color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.adress-area:hover,
-.adress-area:focus,
-.adress-mail:hover,
-.adress-mail:focus,
-.adress-tel:hover,
-.adress-tel:focus {
-	color: var(--accent);
+	&:hover,
+	&:focus {
+		color: var(--accent);
+	}
 }
 
 .join {
@@ -76,10 +76,10 @@
 	width: 44px;
 	height: 44px;
 	margin-right: 10px;
-}
 
-.footer-social-item:last-child {
-	margin-right: 0;
+	&:last-child {
+		margin-right: 0;
+	}
 }
 
 .footer-social-icon {
@@ -97,10 +97,11 @@
 	transition-property: background-color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-social-link:hover,
-.footer-social-link:focus {
-	background-color: var(--accent);
+
+	&:hover,
+	&:focus {
+		background-color: var(--accent);
+	}
 }
 
 .footer-form {
@@ -127,11 +128,11 @@
 	transition-property: border-color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.form-input:focus,
-.form-input:hover {
-	border-color: var(--hover-color);
+	&:focus,
+	&:hover {
+		border-color: var(--hover-color);
+	}
 }
 
 .footer-submit {
@@ -155,11 +156,11 @@
 	transition-property: background-color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-submit:hover,
-.footer-submit:focus {
-	background: var(--hover-color);
+	&:hover,
+	&:focus {
+		background: var(--hover-color);
+	}
 }
 
 .footer-form-text {
