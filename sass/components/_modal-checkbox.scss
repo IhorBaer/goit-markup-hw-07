@@ -32,16 +32,16 @@
 	background-image: url(../images/check.svg);
 }
 
+.check-input:hover + .check-box {
+	background-image: url(../images/dlue.svg);
+}
+
 .check-input:focus + .check-box {
 	background-image: url(../images/dlue.svg);
 }
 
 .check-input:checked:focus + .check-box {
 	background-image: url(../images/hover.svg);
-}
-
-.check-input:hover + .check-box {
-	background-image: url(../images/dlue.svg);
 }
 
 .check-input:checked:hover + .check-box {
