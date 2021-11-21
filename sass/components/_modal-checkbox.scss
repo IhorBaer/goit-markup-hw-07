@@ -12,30 +12,14 @@
 	color: var(--primary-text-color);
 }
 
-.check-input {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-
-	&:checked + .check-box {
-		background-image: url(../images/check.svg);
-	}
-
-	&:hover + .check-box {
-		background-image: url(../images/dlue.svg);
-	}
-
-	&:focus + .check-box {
-		background-image: url(../images/dlue.svg);
-	}
-
-	&:checked:focus + .check-box {
-		background-image: url(../images/hover.svg);
-	}
-
-	&:checked:hover + .check-box {
-		background-image: url(../images/hover.svg);
-	}
+.check-box-linc {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.71;
+	/* identical to box height, or 171% */
+	letter-spacing: 0.03em;
+	color: var(--accent);
 }
 
 .check-box {
@@ -48,14 +32,24 @@
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.check-box-linc {
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 1.71;
-	/* identical to box height, or 171% */
-	letter-spacing: 0.03em;
-	color: var(--accent);
+.check-input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	&:hover + .check-box,
+	&:focus + .check-box {
+		background-image: url(../images/dlue.svg);
+	}
+
+	&:checked + .check-box {
+		background-image: url(../images/check.svg);
+	}
+
+	&:checked:hover + .check-box,
+	&:checked:focus + .check-box {
+		background-image: url(../images/hover.svg);
+	}
 }
 
 .hiro-form-button {
